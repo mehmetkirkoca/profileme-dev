@@ -9,7 +9,7 @@ import storeStateMiddleware from "../middleware/storeStateMiddleware";
 
 export const StateContext = createContext(null);
 
-export const STORED_STATE_KEY = "state";
+export const STORED_STATE_KEY = "profileme";
 
 // Icon Store
 export const iconData = {
@@ -246,6 +246,14 @@ export const iconData = {
       iTag: "vite",
       link: "https://vitejs.dev/",
     },
+    {
+      name: "Remix",
+      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/remix-colored.svg",
+      darkPath:
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/remix-colored-dark.svg",
+      iTag: "remix",
+      link: "https://remix.run/",
+    },
   ],
   backend: [
     {
@@ -331,6 +339,12 @@ export const iconData = {
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/flask-colored-dark.svg",
       iTag: "flask",
       link: "https://flask.palletsprojects.com/en/2.0.x/",
+    },
+    {
+      name: "Render",
+      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/render-colored.svg",
+      iTag: "render",
+      link: "https://render.com/",
     },
     {
       name: "Supabase",
@@ -637,6 +651,14 @@ export const iconData = {
       link: "https://www.terra.money/",
     },
   ],
+  cloud: [
+    {
+      name: "Google Cloud",
+      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/googlecloud-colored.svg",
+      iTag: "googlecloud",
+      link: "https://cloud.google.com/",
+    },
+  ],
 };
 
 export const ACTIONS = {
@@ -889,6 +911,7 @@ const initialState = {
     other: [],
     software: [],
     web3: [],
+    cloud: [],
   },
   // Socials State
   socials: {
