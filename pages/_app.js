@@ -9,7 +9,7 @@ import storeStateMiddleware from "../middleware/storeStateMiddleware";
 
 export const StateContext = createContext(null);
 
-export const STORED_STATE_KEY = "profileme";
+export const STORED_STATE_KEY = "profileMeState";
 
 // Icon Store
 export const iconData = {
@@ -924,7 +924,9 @@ const initialState = {
     },
     twitter: {
       path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg",
-      linkPrefix: "https://www.twitter.com/",
+      darkPath:
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter-dark.svg",
+      linkPrefix: "https://www.x.com/",
       linkSuffix: "",
     },
     hashnode: {
